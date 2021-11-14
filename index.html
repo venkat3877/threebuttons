@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>three buttons</title>
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+        #container {
+        height: 200px;
+        width: 500px;
+        box-shadow: 0px 0px 10px black;
+        text-align: center;
+        margin: 10px auto;
+        background-color: white;
+      }
+      h2{
+          padding-top: 10px;
+          color: brown;
+        }
+        #bt1{
+            color:black;
+        }
+        #bt2{
+            color: tomato;
+        }
+        #bt3{
+            color:orange;
+        }
+    </style>
+    <script>
+        function btnfunc(id){
+            var name=document.getElementById("s1").innerText
+            if(id=="bt1"){
+                var name=document.getElementById("s1")
+                name.innerText="Good Morning "
+                name.style.color="Blue"
+            }else  if(id=="bt2"){
+                var name=document.getElementById("s1")
+                name.innerText="Good AfterNoon "
+                name.style.color="Blue"
+            }else{
+                if(id=="bt3"){
+                var name=document.getElementById("s1")
+                name.innerText="Good Evening "
+                name.style.color="Blue"
+            }
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h2 id="name"><span id="s1">Hello</span> <span id="s2">Venkat</span></h2>
+        <button id="bt1" onclick="btnfunc('bt1')">Good Morning</button>
+        <button id="bt2" onclick="btnfunc('bt2')">Good AfterNoon</button>
+        <button id="bt3" onclick="btnfunc('bt3')">Good Evening</button>
+    </div>
+</body>
+</html>
